@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react_meals_api/static/css/main.57341a47.chunk.css",
-    "main.js": "/react_meals_api/static/js/main.fbfa7131.chunk.js",
-    "main.js.map": "/react_meals_api/static/js/main.fbfa7131.chunk.js.map",
+    "main.js": "/react_meals_api/static/js/main.e6e47347.chunk.js",
+    "main.js.map": "/react_meals_api/static/js/main.e6e47347.chunk.js.map",
     "runtime-main.js": "/react_meals_api/static/js/runtime-main.b93b61ce.js",
     "runtime-main.js.map": "/react_meals_api/static/js/runtime-main.b93b61ce.js.map",
     "static/js/2.e8769f8a.chunk.js": "/react_meals_api/static/js/2.e8769f8a.chunk.js",
     "static/js/2.e8769f8a.chunk.js.map": "/react_meals_api/static/js/2.e8769f8a.chunk.js.map",
     "index.html": "/react_meals_api/index.html",
-    "precache-manifest.b6b29ff0ca38db73846879cfc49de6f9.js": "/react_meals_api/precache-manifest.b6b29ff0ca38db73846879cfc49de6f9.js",
+    "precache-manifest.1866d7f42ac21dd0d4435dda86fd444f.js": "/react_meals_api/precache-manifest.1866d7f42ac21dd0d4435dda86fd444f.js",
     "service-worker.js": "/react_meals_api/service-worker.js",
     "static/css/main.57341a47.chunk.css.map": "/react_meals_api/static/css/main.57341a47.chunk.css.map",
     "static/js/2.e8769f8a.chunk.js.LICENSE.txt": "/react_meals_api/static/js/2.e8769f8a.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.b93b61ce.js",
     "static/js/2.e8769f8a.chunk.js",
     "static/css/main.57341a47.chunk.css",
-    "static/js/main.fbfa7131.chunk.js"
+    "static/js/main.e6e47347.chunk.js"
   ]
 }
