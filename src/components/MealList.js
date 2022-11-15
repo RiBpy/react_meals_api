@@ -3,7 +3,11 @@ import Loading from '../components/Loading';
 import Meal from '../components/Meal';
 import { useGlobalContext } from '../context';
 const MealList = () => {
-  const {meals,loading}=useGlobalContext()
+  const {meals,loading,filterText}=useGlobalContext()
+  let newMeals;
+  filterText.length>0?newMeals= meals.filter(filteredMeals=>{
+    return filteredMeals.type===filterText;
+  }):newMeals=meals;
   if(loading){
     return <Loading/>
   }if(meals.length<1){
@@ -17,7 +21,7 @@ const MealList = () => {
    <section className="section">
     <h2 className='section-title'>Meals</h2>
      <div className='meals-center'>
-      {meals.map(item=>{
+      {newMeals.map(item=>{
         return <Meal key={item.id} {...item}/>
       })}
     </div>

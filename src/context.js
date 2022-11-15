@@ -7,13 +7,14 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [meals, setMeals] = useState([]);
   const [searchText, setSearchText] = useState("a");
-  const fetchData = useCallback(async () => {
+  const [filterText, setFilterText] = useState([]);
+  const fetchData = async () => {
     try {
-      const res = await fetch(`${url}${searchText}`);
+      let res=await fetch(`${url}${searchText}`);
       const data = await res.json();
       const { meals } = data;
       if (meals) {
-        const newMeals = meals.map((item) => {
+        let newMeals=meals.map((item) => {
           const {
             idMeal,
             strMeal,
@@ -31,9 +32,9 @@ const AppProvider = ({ children }) => {
             info: strArea,
             tag: strTags,
             instructions: strInstructions,
-          };
-        });
-        setMeals(newMeals);
+          };  
+      })
+        setMeals(newMeals)
       } else {
         setMeals([]);
       }
@@ -42,12 +43,12 @@ const AppProvider = ({ children }) => {
       console.log(error);
       setLoading(false);
     }
-  },[searchText]);
+  };
   useEffect(() => {
     fetchData();
   }, [searchText, fetchData]);
   return (
-    <AppContext.Provider value={{ loading, meals, searchText, setSearchText }}>
+    <AppContext.Provider value={{ loading, meals,searchText, setSearchText,filterText,setFilterText}}>
       {children}
     </AppContext.Provider>
   );

@@ -10,21 +10,21 @@ import SingleMeal from './pages/SingleMeal';
 import Navbar from './components/Navbar';
 function App() {
   return (
-    <Router>
+    <Router basename='/react_meals_api'>
       <Navbar/>
       <Switch>
-        <Route exact path={"/"}>
-       <Home/>
-        </Route>
-        <Route path={"/about"}>
-       <About/>
-        </Route>
-        <Route path={"/meal/:id"}>
-       <SingleMeal/>
-        </Route>
-        <Route path={"*"}>
-       <Error/>
-        </Route>
+          <Route exact path={"/"}>
+             <Home/>
+          </Route>
+          <Route path={"/about"}>
+             <About/>
+          </Route>
+          <Route path={"/meal/:id"}>
+             <SingleMeal/>
+          </Route>
+          <Route path={"*"}>
+              <Error/>
+          </Route>
       </Switch>
       <Footer/>
     </Router>
