@@ -328,7 +328,17 @@ Form
   border-radius: var(--mainBorderRadius);
   box-shadow: var(--lightShadow);
 }
-
+@media screen and (max-width:522px){
+  .search-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem;
+    width:100%;
+  }
+  .form-control{
+    padding:20px;
+  }
+}
 .form-control label {
   display: block;
   margin-bottom: 1.25rem;

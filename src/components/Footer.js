@@ -8,7 +8,7 @@ const Footer = () => {
             <Link to='/'><img src={logo} alt="logo" className='footer-logo' /></Link>
         </div>
         <div className="footer-info">
-            Developed by &copy; <Link className='footer-add' to='https://www.fb.com/ribpy'>Riaz Bappy</Link>
+            Developed by &copy; <Link className='footer-add' to='https://linkedin.com/in/ribpy'>Riaz Bappy</Link>
         </div>
     </div>
   )
